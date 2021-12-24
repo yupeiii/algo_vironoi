@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Voronoi Diagram</title>
+        <title>Voronoi Diagram </title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
@@ -14,6 +14,14 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
         <!-- Navigation-->
@@ -26,10 +34,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Sample Post</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">軟體規格書</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">軟體說明</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">程式設計</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">軟體測試與實驗結果</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">結論與心得</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">附錄</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,7 +51,7 @@
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="site-heading">
                             <h1>Voronoi Diagram</h1>
-                            <span class="subheading">M103140007 林郁珮</span>
+                            <span class="subheading">M103140007 資安碩碩一 林郁珮 </span>
                         </div>
                     </div>
                 </div>
@@ -53,14 +63,29 @@
                 <div class="container px-4 px-lg-5">
                     <div class="row gx-4 gx-lg-5 justify-content-center">
                         <div class="col-md-10 col-lg-8 col-xl-7">
-                            <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
-                            <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
-                            <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
-                            <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
-                            <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+                            <h2 class="section-heading">軟體規格書</h2>
+                            <hr style="filter: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color="#6f5499" size="3" />
+                            <div class="panel panel-default">
+                                <div class = "panel-heading">輸入與輸出資料規格</div>
+                                <div class = "panel-body">
+                                    <h4><strong>輸入</strong></h4>
+                                    <ol>
+                                        <li>以滑鼠在600*600的畫布上隨意點擊</li>
+                                        <li>點擊"file"中的"input file"讀入「輸入文字檔」與「輸出文字檔」
+                                            <button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#myModal">詳細格式</button>
+                                        </li>
+                                    </ol>
+                                    <h4><strong>輸出</strong></h4>
+                                    <ol>
+                                        <li>點選"File"中的"save file"來輸出「輸出文字檔」 </li>
+                                    </ol>
+                                </div>
+                            </div>
+
+
+
                             <h2 class="section-heading">The Final Frontier</h2>
-                            <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-                            <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+                                                
                             <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
                             <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
                             <h2 class="section-heading">Reaching for the Stars</h2>
@@ -79,6 +104,33 @@
                     </div>
                 </div>
             </article>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+             <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">詳細格式</h4>
+                </div>
+            <div class="modal-body">
+                 <p>!!請以UTF-8編碼</p>
+                 <p>在檔案中、「#」符號開頭乃是註解及說明文字、可不予理會</p>
+                 <p> 3 // 總共有三個點</p>
+                 <p> 200 200 // 第1點座標(x, y) = (200, 200)</p>
+                 <p> 300 200 // 第2點座標(x, y) = (300, 200)</p>
+                 <p> 400 200 // 第3點座標(x, y) = (400, 200)</p>
+                 <p>#中間也可加入備註</p>
+                 <p>0 // 檔案結尾</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+  
+            </div>
+            </div>
             <!-- Footer-->
             <footer class="border-top">
                 <div class="container px-4 px-lg-5">
