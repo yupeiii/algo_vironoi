@@ -78,28 +78,40 @@
                                     <h4><strong>輸出</strong></h4>
                                     <ol>
                                         <li>點選"File"中的"save file"來輸出「輸出文字檔」 </li>
+                                        <li>輸出格式: 
+                                            <P>"P" x y //原輸入點座標</P> 
+                                            <p>"E" x1 y1 x2 y2 //分割線段 (x1,y1)為起點 ，(x2,y2)為終點</p>
+                                            <p>座標點以 lexical order順序排列（即先排序第一維座標，若相同，則再排序第二維座標；線段亦以 lexical order順序排列)</p>
+                                        </li>
+                                        <li>線段的lexical order (字典序)</li>
+                                            <p>a. 線段E x1 y1 x2 y2，座標須滿足x1≦x2 或 x1=x2, y1≦y2 </p>
+                                            <p>b. 不同線段之間，依照x1, y1, x2, y2的順序進行排序(字典序) </p>
+                                        <li>範例如下:
+                                            <p>  </p>
+                                            <p>   P 103 200</p>
+                                            <p>   P 193 64</p>
+                                            <p>   P 193 370</p>
+                                            <p>   P 283 200</p>
+                                            <p>   P 283 200</p>
+                                            <p>   E 0 34 193 161 </p>
+                                            <p>   E 0 363 193 261</p>
+                                            <p>   E 193 161 193 261</p>
+                                            <p>   E 193 161 437 0</p>
+                                            <p>   E 193 261 600 476</p>
+                                        </li>
+
                                     </ol>
                                 </div>
                             </div>
 
+                            <div class="panel panel-default">
+                                <div class = "panel-heading">功能規格與介面規格</div>
+                                <div class = "panel-body">
+                                    <img src="./Image/介面.PNG" class="img-rounded" alt="Cinque Terre">
+                                </div>
+                            </div>
 
-
-                            <h2 class="section-heading">The Final Frontier</h2>
-                                                
-                            <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-                            <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-                            <h2 class="section-heading">Reaching for the Stars</h2>
-                            <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-                            <a href="#!"><img class="img-fluid" src="assets/img/post-sample-image.jpg" alt="..." /></a>
-                            <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-                            <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-                            <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-                            <p>
-                                Placeholder text by
-                                <a href="http://spaceipsum.com/">Space Ipsum</a>
-                                &middot; Images by
-                                <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>
-                            </p>
+                            
                         </div>
                     </div>
                 </div>
