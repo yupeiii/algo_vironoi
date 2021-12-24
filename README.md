@@ -1,2 +1,2 @@
-# algo_vironoi.github.io
+# algo_vironoi
 NSYSU Algorithm midterm project - VoronoiDiagram
