@@ -34,12 +34,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">軟體規格書</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">軟體說明</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">程式設計</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">軟體測試與實驗結果</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">結論與心得</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">附錄</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#section1">軟體規格書</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#section2">軟體說明</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#section3">程式設計</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#section4">軟體測試與實驗結果</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#section5">結論與心得</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="https://github.com/yupeiii/algo_vironoi">附錄</a></li>
                     </ul>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                 <div class="container px-4 px-lg-5">
                     <div class="row gx-4 gx-lg-5 justify-content-center">
                         <div class="col-md-10 col-lg-8 col-xl-7">
-                            <h2 class="section-heading">軟體規格書</h2>
+                            <h2 class="section-heading" id = "section1">軟體規格書</h2>
                             <hr style="filter: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color="#6f5499" size="3" />
                             <div class="panel panel-default">
                                 <div class = "panel-heading">輸入與輸出資料規格</div>
@@ -76,7 +76,7 @@
                                         </li>
                                     </ol>
                                     <h4><strong>輸出</strong></h4>
-                                    <ol>
+                                    <ol><font size="3">
                                         <li>點選"File"中的"save file"來輸出「輸出文字檔」 </li>
                                         <li>輸出格式: 
                                             <P>"P" x y //原輸入點座標</P> 
@@ -99,7 +99,7 @@
                                             <p>   E 193 161 437 0</p>
                                             <p>   E 193 261 600 476</p>
                                         </li>
-
+                                    </font>
                                     </ol>
                                 </div>
                             </div>
@@ -108,18 +108,18 @@
                                 <div class = "panel-heading">功能規格與介面規格</div>
                                 <div class = "panel-body">
                                     <h4><strong>介面</strong></h4>
-                                    <ol>
+                                    <ol><font size="3">
                                         <li>最上方為功能目錄欄</li>
                                         <li>畫布上方之icon由左至右分別為<img src="./icon/play.png" class="img-rounded" alt="Cinque Terre"> Run,<img src="./icon/step.png" class="img-rounded" alt="Cinque Terre">Step by Step,<img src="./icon/clean.png" class="img-rounded" alt="Cinque Terre">Clean之功能</li>
                                         <li>中間為視窗畫布，大小為600*600，其中左上方為原點(0,0)</li>
                                         <li>右側顯示欄則為點擊畫布時的點座標</li>
-                                    </ol>
+                                    </font></ol>
                                     <img src="./Image/介面.PNG" class="img-rounded" alt="Cinque Terre">
                                 </div>
                             </div>
                             <div class="panel panel-default">
                                 <div class = "panel-heading">軟體測試規劃書</div>
-                                <div class = "panel-body">
+                                <div class = "panel-body"><font size="3">
                                     <p>
                                         可以利用滑鼠直接點擊畫布，或者讀取輸入資料；並且使用直接執行即逐步執行之功能實現Voronoi Diagram於畫布上，來進行軟體測試。
                                     </p>
@@ -127,10 +127,10 @@
                                         <li>1~3點: 直接顯示</li>
                                         <li>4~6點: 一次Divide一次Merge</li>
                                         <li>7點以上: 多次Divde和多次Merge</li>
-                                    </ul>
+                                    </font></ul>
                                 </div>
                             </div>    
-                            <h2 class="section-heading">軟體說明</h2>
+                            <h2 class="section-heading" id="section2">軟體說明</h2>
                             <hr style="filter: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color="#6f5499" size="3" />
                             <div class="panel panel-default">
                                 <div class = "panel-heading">使用說明</div>
@@ -169,26 +169,26 @@
                                     <ul><li>點擊<img src="./icon/clean.png" class="img-rounded" alt="Cinque Terre">即可清除畫布上的資料</li></ul>
                                 </div>
                             </div>
-                            <h2 class="section-heading"> 程式設計</h2>
+                            <h2 class="section-heading"id="section3"> 程式設計</h2>
                             <hr style="filter: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color="#6f5499" size="3" />
                             <div class="panel panel-default">
                                 <div class = "panel-heading">資料結構</div>
                                 <div class = "panel-body">
                                  <h4><strong></strong></h4>
-                                 <ul>
+                                 <ul><font size="3">
                                      <li><b>Point: </b>儲存點座標(x,y)以及處理相關運算(e.g.找中點)</li>
                                      <li><b>Vector: </b>處理向量之運算(e.g. 外積、法向量)</li>
                                      <li><b>Triangle: </b>處理三角形之相關運算(e.g.計算面積、外心)</li>
                                      <li><b>Divider : </b>Voronoi Diagram之分割線 結構:(線段起點,線段終點,被分割之點A,被分割之點B</li>
                                      <li><b>Convexhull: </b>Voronoi Diagram之Convexhull 結構:(點,上切線,下切線)</li>
-                                 </ul>
+                                 </ul></font>
                                 </div>
                             </div>    
                             <div class="panel panel-default">
                                 <div class = "panel-heading">三點以下之實作方法</div>
                                 <div class = "panel-body">
                                  <h4><strong> 2點 </strong></h4>
-                                 <ul>
+                                 <ul><font size="3">
                                      <li>直接計算兩點之間之中垂線即為Voronoi Diagram之分割線</li>
                                  </ul>
                                  <h4><strong>3點</strong></h4>
@@ -196,14 +196,14 @@
                                      <li>首先判斷三點是否為三角形</li>
                                      <li>若不是，則代表共線，直接計算各兩點之間之中垂線</li>
                                      <li>若為三角形，則將點利用逆時針方向排序(以確保分割線往正確的方向切割)並計算兩點之間的中垂線後，以三角形的外心作為三線之交點。</li>
-                                 </ul>
+                                 </ul></font>
                                 </div>
                             </div> 
                             <div class="panel panel-default">
                                 <div class = "panel-heading">多點實作方法</div>
                                 <div class = "panel-body">
                                  <h4><strong>Divide and Conquer</strong></h4>
-                                 <ol>
+                                 <ol><font size="3"></font>
                                      <li>分割: 將座標點排序後，把所有座標分為左右兩半</li>
                                      <li>求左右兩邊個別之Voronoi Diagram</li>
                                      <li>利用Convex Hull 求出全部點的上下切線，以作為hyper plane之進入點</li>
@@ -211,17 +211,56 @@
                                      <li>消線:根據hyper plane的方向(外積)來進行消線之動作</li>
                                  </ol>
                                  <br>
-                                 <h4>Convex Hull之實作方法</h4>
+                                 <h4><strong>Convex Hull之實作方法</strong></h4>
                                  透過不斷旋轉(逆時針/順時針旋轉)來找到上下切線，如圖所示:
                                  <a href="https://algorithmtutor.com/Computational-Geometry/An-efficient-way-of-merging-two-convex-hull/">參考資料</a>
                                  <img src="./Image/C1.PNG" class="img-rounded" alt="Cinque Terre"><br>
                                  <img src="./Image/C2.PNG" class="img-rounded" alt="Cinque Terre"><br>
                                  <img src="./Image/C3.PNG" class="img-rounded" alt="Cinque Terre"><br>
                                  <img src="./Image/C4.PNG" class="img-rounded" alt="Cinque Terre"><br>
-                                 
-                                 
+                                
+                                 <h4><strong> 消線之實作</strong></h4>
+                                 方法如同上課所教，計算(HP.start , HP.end,HP2.end)之外積來判斷其方向為順時針/逆時針，<br>
+                                 並把該方向之線段消除。
+                                 <img src="./Image/Algo1.jpg" class="img-rounded" alt="Cinque Terre"><br>
+                                 <img src="./Image/Algo2.jpg" class="img-rounded" alt="Cinque Terre"><br>
+                                </font>
                                 </div>
-                            </div>     
+                            </div>  
+                            <h2 class="section-heading" id="section4">軟體測試與實驗結果</h2>
+
+                            <hr style="filter: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color="#6f5499" size="3" />
+                            <div class="panel panel-default">
+                                <div class = "panel-heading">測試環境</div>
+                                <div class = "panel-body">
+                                 <ul><font size="3">
+                                     <li>程式語言(版本): python 3.8.8</li>
+                                     <li>作業系統: Window10 家用版</li>
+                                     <li>記憶體 : 24GB</li>
+                                     <li>處理器: 11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz   3.11 GHz</li>
+                                     <li>編譯器:直接使用CMD 進行python編譯 (python ./main.py)</li></font>
+                                 </ul>
+                                </div>
+                            </div> 
+                            <div class="panel panel-default">
+                                <div class = "panel-heading">實驗結果</div>
+                                <div class = "panel-body">
+                                 <ul>
+                                     <li>測試極限: 輸入點大約為30~40左右為極限，40點以上可能會有消線沒消好的問題存在(如圖)<br>應該為在消線實作上仍有未考慮完整之地方存在</font></li>
+                                     <img src="./Image/50.PNG" class="img-rounded" alt="Cinque Terre"><br>
+                                 </ul>
+                                </div>
+                            </div> 
+                            <h2 class="section-heading" id="seciont5">結論與心得</h2>
+                            <hr style="filter: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color="#6f5499" size="3" />
+                            <div class="panel panel-default">
+                                <div class = "panel-heading">結論與心得</div>
+                                <div class = "panel-body">
+                                 <p><font size="3">演算法的期中專題，算是我第一次實作出的演算法程式，在剛開始聽到作業方法實，就知道這項作業架構比以往寫過的任何程式都來的複雜，也讓我更加熟悉物件導向程式之設計，
+                                 在一開始就把資料結構設計好，是非常重要的，這為之後增加任何功能都打下了很好的基礎，而此次專題最難的部份我認為是想出一個好的數學方法來解決問題，對於大學後就不太碰到向量外積等概念的我來說，算是一大困難，
+                                透過這份專題著實地幫我複習了高中數學，但是所有的努力換來的成果，讓我有滿滿的成就感!也讓我對程式的架構方法有了更進一步的認識，可以說是受益良多。</font></p>
+                                </div>
+                            </div> 
 
 
 
@@ -268,24 +307,9 @@
                     <div class="row gx-4 gx-lg-5 justify-content-center">
                         <div class="col-md-10 col-lg-8 col-xl-7">
                             <ul class="list-inline text-center">
+                                
                                 <li class="list-inline-item">
-                                    <a href="#!">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fas fa-circle fa-stack-2x"></i>
-                                            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#!">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fas fa-circle fa-stack-2x"></i>
-                                            <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#!">
+                                    <a href="https://github.com/yupeiii/algo_vironoi">
                                         <span class="fa-stack fa-lg">
                                             <i class="fas fa-circle fa-stack-2x"></i>
                                             <i class="fab fa-github fa-stack-1x fa-inverse"></i>
