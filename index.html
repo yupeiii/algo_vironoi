@@ -172,9 +172,9 @@
                             <h2 class="section-heading"> 程式設計</h2>
                             <hr style="filter: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color="#6f5499" size="3" />
                             <div class="panel panel-default">
-                                <div class = "panel-heading">軟體測試規劃書</div>
+                                <div class = "panel-heading">資料結構</div>
                                 <div class = "panel-body">
-                                 <h4><strong>資料結構</strong></h4>
+                                 <h4><strong></strong></h4>
                                  <ul>
                                      <li><b>Point: </b>儲存點座標(x,y)以及處理相關運算(e.g.找中點)</li>
                                      <li><b>Vector: </b>處理向量之運算(e.g. 外積、法向量)</li>
@@ -184,6 +184,35 @@
                                  </ul>
                                 </div>
                             </div>    
+                            <div class="panel panel-default">
+                                <div class = "panel-heading">三點以下之實作方法</div>
+                                <div class = "panel-body">
+                                 <h4><strong> 2點 </strong></h4>
+                                 <ul>
+                                     <li>直接計算兩點之間之中垂線即為Voronoi Diagram之分割線</li>
+                                 </ul>
+                                 <h4><strong>3點</strong></h4>
+                                 <ul>
+                                     <li>首先判斷三點是否為三角形</li>
+                                     <li>若不是，則代表共線，直接計算各兩點之間之中垂線</li>
+                                     <li>若為三角形，則將點利用逆時針方向排序(以確保分割線往正確的方向切割)並計算兩點之間的中垂線後，以三角形的外心作為三線之交點。</li>
+                                 </ul>
+                                </div>
+                            </div> 
+                            <div class="panel panel-default">
+                                <div class = "panel-heading">多點實作方法</div>
+                                <div class = "panel-body">
+                                 <h4><strong>Divide and Conquer</strong></h4>
+                                 <ol>
+                                     <li>分割: 將座標點排序後，把所有座標分為左右兩半</li>
+                                     <li>求左右兩邊個別之Voronoi Diagram</li>
+                                     <li>利用Convex Hull 求出全部點的上下切線，以作為hyper plane之進入點</li>
+                                     <li>找出hyper plane : 利用上切線之中垂線作為進入點，當撞到Voronoi Diagram時(有交點)就轉彎，最後從下切線離開</li>
+                                     <li>消線:根據hyper plane的方向(外積)來進行消線之動作</li>
+                                 </ol>
+                                </div>
+                            </div>     
+
 
 
 
