@@ -1,7 +1,5 @@
 #coding=UTF-8
-#學號: M103140007
-#系級: 資安碩碩一
-#姓名 :林郁珮
+
 
 from element import *
 
