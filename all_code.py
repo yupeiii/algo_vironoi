@@ -1,9 +1,7 @@
 #$LAN=PYTHON$
 #執行方法 python ./main.py
 #coding=UTF-8
-#學號: M103140007
-#系級: 資安碩碩一
-#姓名 :林郁珮
+
 
 
 import tkinter as tk
